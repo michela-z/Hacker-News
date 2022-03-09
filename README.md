@@ -27,7 +27,7 @@ il punteggio (score) che indica la popolarità della notizia.
 
 
 ## LINK al progetto
- Prova il progetto qui: [https://netlify.app/](https://hackernewssite-bymz.netlify.app/)
+ Prova il progetto qui: [https://hackernewssite-bymz.netlify.app/](https://hackernewssite-bymz.netlify.app/)
    ~   GitHub Repository: [https://github.com/michela-z/Hacker-News](https://github.com/michela-z/Hacker-News) 
 
 
