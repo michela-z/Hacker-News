@@ -166,7 +166,7 @@ a {
     position: fixed;
     bottom: 80px;
     right: 20px;
-    color: #FF3D57;
+    color: #6d6d6d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,7 +183,7 @@ a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    color: #FF3D57;
+    color: #6d6d6d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,7 +191,7 @@ a {
 }
 
 .up:hover, .down:hover {
-    color: #6d6d6d;
+    color: #FF3D57; 
 }
 
 
