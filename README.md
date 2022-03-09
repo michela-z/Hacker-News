@@ -23,12 +23,12 @@ il punteggio (score) che indica la popolarità della notizia.
 - css
 - javascript
 
-- Librerie esterni: loadash, axios.
+- Librerie esterne: lodash, axios.
 
 
 ## LINK al progetto
  Prova il progetto qui: [https://netlify.app/](https://.netlify.app/)
-   ~   GitHub Repository: [https://github.com/michela-z/](https://github.com/michela-z/) 
+   ~   GitHub Repository: [https://github.com/michela-z/Hacker-News](https://github.com/michela-z/Hacker-News) 
 
 
 ## Contatti
