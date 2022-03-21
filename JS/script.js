@@ -53,7 +53,7 @@ function loadSection() {
 
 axios.get('https://hacker-news.firebaseio.com/v0/' + getValue(defaultValue, this.className) + '.json')
 .then(res => {
-    let listOfId = res.data;
+    let listOfId = _.get(res, 'data', '');
     let count = 0;
 
     if (this.className != undefined) {
@@ -85,18 +85,22 @@ axios.get('https://hacker-news.firebaseio.com/v0/' + getValue(defaultValue, this
 
             axios.get(infoUrl)
                 .then(resTwo => {
-                    let date = (new Date((_.get(resTwo, 'data.time')) * 1000).toISOString().slice(0, 19).replace('T', ' '));
+                    let date = (new Date((_.get(resTwo, 'data.time', '')) * 1000).toISOString().slice(0, 19).replace('T', ' '));
                     let box = document.createElement('div');
                     box.className = 'news-box';
                     container.append(box);
 
+                    const score = _.get(resTwo, 'data.score', 'No score');
+                    const title = _.get(resTwo, 'data.title', 'No title');
+                    const url = _.get(resTwo, 'data.url', 'No url');
+
                     box.innerHTML = `
                     <div class="box-header">
                     <h4 class="data">${date}</h4>
-                    <p class="score">Score: <b>${resTwo.data.score}</b></p>
+                    <p class="score">Score: <b>${score}</b></p>
                     </div>
-                    <h2 class="title">${resTwo.data.title}</h2>
-                    <h3 class="link"><a href="${resTwo.data.url}">Click to read</a></h3>
+                    <h2 class="title">${title}</h2>
+                    <h3 class="link"><a href="${url}">Click to read</a></h3>
                     `;
                 })
                 .catch(err => console.log(err));
