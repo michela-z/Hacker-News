@@ -23,7 +23,7 @@ il punteggio (score) che indica la popolarità della notizia.
 - css
 - javascript
 
-- Librerie esterne: lodash, axios.
+- Librerie esterne: lodash, axios, webpack.
 
 
 ## LINK al progetto
