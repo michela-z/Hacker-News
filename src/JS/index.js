@@ -1,4 +1,4 @@
-import './style.css';
+import '../css/style.css';
 import _ from 'lodash';
 import axios from 'axios';
 
@@ -39,9 +39,7 @@ allSection.forEach(element => {
 let thisUrl = ['newstories'];
 let count = 0;
 
-window.addEventListener('load', () => {
-    loadSection();
-});
+window.addEventListener('load', loadSection);
 
 
 function loadSection(e) {
