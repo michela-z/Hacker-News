@@ -39,10 +39,10 @@ allSection.forEach(element => {
 let thisUrl = ['newstories'];
 let count = 0;
 
+window.addEventListener('load', loadSection);
 
 function loadSection(e) {
 
-    console.log('prima funzione');
     let getClass = e.target.className;
     let defaultValue = 'newstories';
 
@@ -67,7 +67,7 @@ axios.get(primoUrl)
     if(thisUrl.length > 2) {
         thisUrl.splice(0, 1);
     }
-    console.log(thisUrl);
+    // console.log(thisUrl);
 
     let currentSection = document.querySelector('.current-section');
     currentSection.innerHTML = getValue(defaultValue, getClass);
@@ -79,8 +79,9 @@ axios.get(primoUrl)
         nextArray();
     }
 
+
     function nextArray() {
-        console.log('seconda funzione');
+
         let newArray = listOfId.slice(count, count + 10);
 
         newArray.map(id => {
@@ -115,8 +116,3 @@ axios.get(primoUrl)
 })
 .catch(err => console.log(err));
 };
-
-window.addEventListener('load', (e) => {
-    console.log('window load')
-    loadSection(e);
-});
