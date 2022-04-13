@@ -21,8 +21,8 @@ il punteggio (score) che indica la popolarità della notizia.
 
 ## Come eseguire l'applicazione
 Eseguire:
-npm install
-npm run build
+- npm install
+- npm run build
 
 
 ## Linguaggi utilizzati
