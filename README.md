@@ -29,9 +29,8 @@ Eseguire:
 - html
 - css
 - javascript
-
-- Librerie esterne: lodash, axios, webpack.
-
+- Librerie esterne: lodash, axios.
+- Bundler: webpack.
 
 ## LINK al progetto
  Prova il progetto qui: [https://hackernewssite-bymz.netlify.app](https://hackernewssite-bymz.netlify.app)
