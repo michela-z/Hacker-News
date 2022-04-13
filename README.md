@@ -2,6 +2,7 @@
 
 ## Contenuti
 * Descrizione
+* Come eseguire l'applicazione
 * Linguaggi utilizzati
 * Link al progetto
 * Contatti
@@ -16,6 +17,12 @@ Selezionando News otterremo le ultime notizie, selezionando Top otterremo le not
 Un tag sotto al menù ci mostra quale è la sezione corrente in cui ci troviamo.
 All'interno al box dedicato alla singola News troviamo la data, il titolo, il link che ci porta al sito che contiene la notizia (Click to read) ed in alto a sinistra
 il punteggio (score) che indica la popolarità della notizia.
+
+
+## Come eseguire l'applicazione
+Eseguire:
+npm install
+npm run build
 
 
 ## Linguaggi utilizzati
