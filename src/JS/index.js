@@ -39,14 +39,11 @@ allSection.forEach(element => {
 let thisUrl = ['newstories'];
 let count = 0;
 
-window.addEventListener('load', loadSection);
-
 
 function loadSection(e) {
 
+    console.log('prima funzione');
     let getClass = e.target.className;
-    console.log(getClass);
-    
     let defaultValue = 'newstories';
 
     function getValue(a, b) {
@@ -83,7 +80,7 @@ axios.get(primoUrl)
     }
 
     function nextArray() {
-        count = 0;
+        console.log('seconda funzione');
         let newArray = listOfId.slice(count, count + 10);
 
         newArray.map(id => {
@@ -118,3 +115,8 @@ axios.get(primoUrl)
 })
 .catch(err => console.log(err));
 };
+
+window.addEventListener('load', (e) => {
+    console.log('window load')
+    loadSection(e);
+});
