@@ -1,4 +1,4 @@
-# Counter
+# Hacker News
 
 ## Contenuti
 * Descrizione
