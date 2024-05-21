@@ -10,6 +10,10 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
+    devServer: {
+        open: true,
+        host: 'localhost'
+    },
     module: {
         rules: [
             {
@@ -24,5 +28,5 @@ module.exports = {
             filename: 'index.html',
             template: 'src/template.html',
         })
-    ]
+    ],
 };
